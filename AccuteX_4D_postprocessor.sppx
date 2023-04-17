@@ -1,0 +1,1412 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<STPostprocessor Version="5">
+    <CNCSystem/>
+    <MachineName/>
+    <Date>02.04.2011</Date>
+    <Authors/>
+    <Comments>
+        <![CDATA[]]>
+    </Comments>
+    <NCFileExtension/>
+    <CommonDefinitions>
+        <LinearApproxPrecision IsSet="False">0.01</LinearApproxPrecision>
+        <Circles>
+            <Support>True</Support>
+            <HelixSupport>False</HelixSupport>
+            <Center>Absolute</Center>
+            <Division>DoNotBreak</Division>
+            <MaxRadius>0</MaxRadius>
+        </Circles>
+        <XMax>0</XMax>
+        <YMax>0</YMax>
+        <ZMax>0</ZMax>
+        <UpperCaseComments>False</UpperCaseComments>
+        <Spaces>True</Spaces>
+        <DecimalSeparator>Point</DecimalSeparator>
+        <BlocksNumbering>
+            <Address>N</Address>
+            <StartValue>1</StartValue>
+            <StepValue>1</StepValue>
+            <Frequence>0</Frequence>
+        </BlocksNumbering>
+    </CommonDefinitions>
+    <InitialQuestions/>
+    <Registers>
+        <Register>
+            <Name>NUMBLOCK</Name>
+            <Address>
+                <![CDATA[N]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>ABSINC</Name>
+            <Address>
+                <![CDATA[G]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>INTERPOL</Name>
+            <Address>
+                <![CDATA[G]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>COMPENS</Name>
+            <Address>
+                <![CDATA[G]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>TAPER</Name>
+            <Address>
+                <![CDATA[G]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>CS</Name>
+            <Address>
+                <![CDATA[G]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>X</Name>
+            <Address>
+                <![CDATA[X]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>Y</Name>
+            <Address>
+                <![CDATA[Y]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>I</Name>
+            <Address>
+                <![CDATA[I]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>J</Name>
+            <Address>
+                <![CDATA[J]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>U</Name>
+            <Address>
+                <![CDATA[U]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>V</Name>
+            <Address>
+                <![CDATA[V]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>K</Name>
+            <Address>
+                <![CDATA[K]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>L</Name>
+            <Address>
+                <![CDATA[L]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>T</Name>
+            <Address>
+                <![CDATA[T]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>HINDEX</Name>
+            <Address>
+                <![CDATA[H]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>True</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>HVALUE</Name>
+            <Address>
+                <![CDATA[= ]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>WIREINS</Name>
+            <Address>
+                <![CDATA[M]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>ENDPRG</Name>
+            <Address>
+                <![CDATA[M]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Present</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>ELECTRIC</Name>
+            <Address>
+                <![CDATA[E]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Absent</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>4</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>0</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>FEEDRATE</Name>
+            <Address>
+                <![CDATA[F]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>No</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>2</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>ROLLR1</Name>
+            <Address>
+                <![CDATA[R]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>ROLLR2</Name>
+            <Address>
+                <![CDATA[,R]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>ANGLE</Name>
+            <Address>
+                <![CDATA[A]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>PartHeight</Name>
+            <Address>
+                <![CDATA[PartH]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+        <Register>
+            <Name>PartOffset</Name>
+            <Address>
+                <![CDATA[PartO]]>
+            </Address>
+            <Comment>
+                <![CDATA[]]>
+            </Comment>
+            <Sign>Minus</Sign>
+            <DecimalPoint>Anyway</DecimalPoint>
+            <NumeralsBeforePoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsBeforePoint>
+            <NumeralsAfterPoint>
+                <Count>3</Count>
+                <Zeros>False</Zeros>
+            </NumeralsAfterPoint>
+            <Scale>1</Scale>
+        </Register>
+    </Registers>
+    <CLDCommandsHandlers>
+        <CLDCommand>
+            <CLDCommandID>Comment</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program Comment
+
+  output "//Operacja: "+CLData$
+
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>Common</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program Common
+
+  MaxReal           : Real    !Reseting value
+  Lcsx              : Real    !X value of LCS
+  Lcsy              : Real    !Y value of LCS
+  FpX               : Real    !X Previous lower point coordinates
+  FpY               : Real    !Y Previous lower point coordinates
+  FpU               : Real    !U Previous upper point coordinates
+  FpV               : Real    !V Previous upper point coordinates
+  CompensNeedOut    : Integer !Compensation outputing flag
+  ConditionsNeedOut : Integer !Condition and feed outputing flag
+  FpUC : Real
+  FpVC : Real
+  FpUC2 : Real
+  FpVC2 : Real
+  
+end
+
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>CutCom</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program CutCom
+
+  if cld[2]=23 then begin ! R compens
+    if cld[1]=71 then begin
+      if cld[10]=24 then COMPENS=42
+                    else COMPENS=41
+      HINDEX=cld[3]; HINDEX@=HINDEX
+    end else begin
+      COMPENS=40
+    end
+  COMPENS@=COMPENS
+  CompensNeedOut=1
+  end
+end
+
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>EDMMove</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program EDMMove
+
+  !START - Checking is LCS is set by origin
+  if CS=0 then begin
+  CS=92;CS@=MaxReal
+  X=0;X@=MaxReal
+  Y=0;Y@=MaxReal
+  end
+  !END - Checking is LCS is set by origin
+  
+  !START - Set absolute coordinates
+  ABSINC=90
+  !END - Set absolute coordinates
+  
+  !START - Insert and break wire commands
+  if (cld.Mode<>0) and (WIREINS=21) then begin
+    CS=92;CS@=MaxReal
+    X@=MaxReal
+    Y@=MaxReal
+    outblock
+    Output "//"
+    WIREINS=20
+    outblock
+
+
+  end
+  if (cld.Mode=0) and (WIREINS=20) then begin
+    if (cld.Ep1X<>FpX) or (cld.Ep1Y<>FpY) then begin
+    WIREINS=21
+    outblock
+    end
+  end
+  !END - Insert and break wire commands
+  
+  !START - Insert and break wire commands
+  if ConditionsNeedOut=1 then begin
+
+    output "M78"
+    output "M80"
+    output "M82"
+    output "M84"
+    Output "//"
+    Electric=1;
+
+    !FEEDRATE@=MaxReal
+    ConditionsNeedOut=0
+    outblock
+    case cld.Mode of
+      1,2: begin ! 2axis and Taper
+        output "M15P0"
+      end
+      3,4: begin
+        output "M15P11"
+      end
+    end
+
+  end
+  !END - Insert and break wire commands
+
+  !START Compensation out
+  if CompensNeedOut=1 then begin
+    if COMPENS<>40 then HINDEX@=MaxReal
+    COMPENS@=MaxReal
+    CompensNeedOut=0
+    if CLD.Mode=2 then begin !Taper
+       !if CLD.A<0 then TAPER=51
+       !else TAPER=52
+       !T=abs(cld.A)!; T@=MaxReal
+       ANGLE = cld.A
+       ANGLE@ = MaxReal
+    end
+  end
+  !END Compensation out
+  
+  !START - Coordinates output
+  X=cld.Ep1X
+  Y=cld.Ep1Y
+  case cld.Mode of
+    0: begin ! Rapid
+        if (cld.Ep1X<>FpX) or (cld.Ep1Y<>FpY) then begin
+        INTERPOL=0
+        end
+    end
+    1,2: begin ! 2axis and Taper
+        if CLD.Span1=0 then begin
+        INTERPOL = 1
+        end else begin
+        if CLD.R1>0 then INTERPOL=3 else INTERPOL=2
+        I=CLD.Pc1X-FpX;I@=MaxReal
+        J=CLD.Pc1Y-FpY;J@=MaxReal
+        end
+        if CLD.RollMode>0 then begin
+          RollR1 = cld.RollR1; RollR1@ = MaxReal
+          RollR2 = cld.RollR2; RollR2@ = MaxReal
+        end
+    end
+    3: begin !2contours 4Axis
+      U = cld.Ep2X - cld.Ep1X-FpU;U@=MaxReal
+      V = cld.Ep2Y - cld.Ep1Y-FpV;V@=MaxReal
+      interhelp1=0
+      interhelp2=0
+      interhelp3=0
+      if CLD.Mode=3 then begin
+        if cld.Span1=1 then begin ! Arc
+          if cld.R1>0 then interhelp1 = 2
+                      else interhelp1 = 4
+          I=CLD.Pc1X-FpX;I@=MaxReal
+          J=CLD.Pc1Y-FpY;J@=MaxReal
+        end
+        if cld.Span2=1 then begin ! Arc
+          if cld.R2>0 then interhelp2 = 8
+                      else interhelp2 = 16
+          if I=0 and J=0 then begin ! KLCord
+          K = cld.Pc2X - FpX;K@ = MaxReal
+          L = cld.Pc2Y - FpY;L@ = MaxReal
+          end else begin
+          K = cld.Pc2X - CLD.Pc1X;K@ = MaxReal
+          L = cld.Pc2Y - CLD.Pc1Y;L@ = MaxReal
+          end
+        end
+        if cld.Span1=0 or cld.Span2=0 then begin! Cut
+          interhelp3=1
+        end
+        interhelp=interhelp1+interhelp2+interhelp3
+        !output str(interhelp)
+        case interhelp of
+          1: INTERPOL=1 !G1-G1
+          3: INTERPOL=6 !G3-G1
+          5: INTERPOL=5 !G2-G1
+          9: INTERPOL=6 !G1-G3
+          17: INTERPOL=5 !G1-G2
+          10: INTERPOL=3 !G3-G3
+          18: INTERPOL=8 !G3-G2
+          12: INTERPOL=7 !G2-G3
+          20: INTERPOL=2 !G2-G2
+         end
+      end
+    end
+    4: begin !4Axis_UV
+      U = cld.Ep2X - cld.Ep1X-FpU;U@=MaxReal
+      V = cld.Ep2Y - cld.Ep1Y-FpV;V@=MaxReal
+      INTERPOL = 1
+    end
+  end
+  !END - Coordinates output
+  
+  !START - Motion mode turn off
+  !if (cld.Mode<>2) and (TAPER<>50) then begin
+  !  TAPER = 50
+  !end
+  if X@ <> X or Y@ <> Y then begin
+  outblock
+  end
+  if COMPENS = 40 then begin
+    output "M15P0"
+    COMPENS = 0
+  end
+  !START - Remember current coordinates
+  FpX=cld.Ep1X
+  FpY=cld.Ep1Y
+  if cld.Mode<3 then begin !2D
+    FpU=0
+    FpV=0
+  end else begin           !4D
+    FpU=cld.Ep2X - cld.Ep1X
+    FpV=cld.Ep2Y - cld.Ep1Y
+    FpUC=cld.Ep2X
+    FpVC=cld.Ep2Y
+    FpUC2=cld.Pc2X - FpuC
+    FpVC2=cld.Pc2Y - FpvC
+
+  end
+  !END - Remember current coordinates
+  
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>Fedrat</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program Fedrat
+
+  ELECTRIC=Cmd.Int["FeedKind"];ELECTRIC@=ELECTRIC
+  FEEDRATE=CLD.NM;FEEDRATE@=FEEDRATE
+  ConditionsNeedOut = 1
+
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>Fini</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program Fini
+
+  !START - Break wire on end of Program
+  if WIREINS=20 then begin
+    WIREINS=21
+    outblock
+  end
+  !END - Break wire on end of Program
+  output "G0 X0. Y0."
+  output "G92 X0. Y0."
+  ENDPRG=2
+  outblock
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>OpStop</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program OpStop
+  output "M01"
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>Origin</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program Origin
+
+  !START - Choosing coordinate system for main machine operation
+  if Cmd.Int["OriginType"]=0 then begin
+    CS=92;CS@=MaxReal
+    !X=CLD.X;
+    X@=MaxReal
+    !Y=CLD.Y;
+    Y@=MaxReal
+    I@=I;I@=MaxReal
+    J@=J;J@=MaxReal
+    Lcsx=CLD.X
+    Lcsy=CLD.Y
+    outblock
+    end
+  !END - Choosing coordinate system
+  
+  !START - Choosing coordinate system for subprogram
+  if Cmd.Int["OriginType"]=1 then begin
+    CS=92;CS@=MaxReal
+    X=CLD.X-Lcsx;X@=MaxReal
+    Y=CLD.Y-Lcsy;Y@=MaxReal
+    Lcsx=X
+    Lcsy=Y
+    outblock
+    end
+  !END - Choosing coordinate system
+    
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>PartNo</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program PartNo
+
+!START - Help variables
+  MaxReal=999999  !Reseting value seting
+!END - Help variables
+
+!START - Setting and reseting
+  WIREINS=21;WIREINS@=WIREINS         !Setting that Wire is not inserted
+  CS=0;CS@=CS                         !LCS reseting
+  INTERPOL=MaxReal;INTERPOL@=INTERPOL !Interpolation reseting
+  FpX = 0                             !X value of LCS reseting
+  FpY = 0                             !Y value of LCS reseting
+  FpU = 0                             !X Previous lower point coordinates reseting
+  FpV = 0                             !Y Previous lower point coordinates reseting
+  FpUC =0
+  FpVC =0
+  FpUC2 =0
+  FpVC2 =0
+  Lcsx = 0                            !U Previous upper point coordinates reseting
+  Lcsy = 0                            !V Previous upper point coordinates reseting
+  ConditionsNeedOut=0
+  CompensNeedOut=0
+  TAPER = 50;TAPER@=TAPER
+
+!END - Setting and reseting
+
+!START - Name of program name checking and outputing
+  !help1=0
+  !if copy(ncname$,1,1)="O" then
+  !  if num(copy(ncname$,2,len(ncname$)-1))<10000 then
+  !    output ncname$
+ !   else help1=1
+ ! else help1=1
+ ! if help1=1 then
+ ! begin
+ ! input "Zła nazwa programu"
+  !output "O9999"
+ ! end
+!END - Name of program name checking and outputing
+  
+
+
+
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>PPFun</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program PPFun
+
+  case cld[1] of
+
+    !START - Technical information comment
+    58: begin
+      J = cld[11]
+      I = cld[10]-cld[11]
+      !Output "//Poziom ruchow szybkich   = " + str(cld[9])  !Rapid level
+      !Output "//Poziom górnej prowadnicy = " + str(cld[47]) !Upper guide level
+      !Output "//Poziom górny pracy       = " + str(cld[10]) !Upper work level
+      Output "//Poziom dolny pracy       = " + str(cld[11]) !Lower work level
+      Output "//Grubosc materialu        = " + str(cld[10]-cld[11]) !Upper work level
+      !Output "//Poziom dolnej prowadnicy = " + str(cld[48]) !Lower guide level
+      !Output "//Srednica drutu           = " + str(cld[27]) !Wire diameter
+    end
+    !END - Technical information comment
+
+    !START - Conditions
+    56: begin
+      !HINDEX = cld[4]; HINDEX@ = MaxReal ! Offset code
+      !HVALUE = cld[5]; HVALUE@ = MaxReal ! Offset value
+      !OutBlock
+    end
+    !END - Conditions
+
+  end
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+        <CLDCommand>
+            <CLDCommandID>Stop</CLDCommandID>
+            <Handlers>
+                <Program>
+                    <Enabled>True</Enabled>
+                    <ProgramCode>
+                        <![CDATA[program Stop
+  output "M00"
+end
+]]>
+                    </ProgramCode>
+                </Program>
+            </Handlers>
+        </CLDCommand>
+    </CLDCommandsHandlers>
+    <SubroutineList>
+        <Subroutine>
+            <Name>Filter</Name>
+            <ProgramCode>
+                <![CDATA[]]>
+            </ProgramCode>
+        </Subroutine>
+    </SubroutineList>
+    <Machine>
+        <MachineAxes/>
+    </Machine>
+    <TransliterationTable>
+        <ActiveLanguage/>
+        <Languages>
+            <Language>
+                <Name>Russian</Name>
+                <Chars>
+                    <Char>
+                        <ID>1</ID>
+                        <Latin>а</Latin>
+                        <Local>а</Local>
+                    </Char>
+                    <Char>
+                        <ID>2</ID>
+                        <Latin>b</Latin>
+                        <Local>б</Local>
+                    </Char>
+                    <Char>
+                        <ID>3</ID>
+                        <Latin>v</Latin>
+                        <Local>в</Local>
+                    </Char>
+                    <Char>
+                        <ID>4</ID>
+                        <Latin>g</Latin>
+                        <Local>г</Local>
+                    </Char>
+                    <Char>
+                        <ID>5</ID>
+                        <Latin>d</Latin>
+                        <Local>д</Local>
+                    </Char>
+                    <Char>
+                        <ID>6</ID>
+                        <Latin>e</Latin>
+                        <Local>е</Local>
+                    </Char>
+                    <Char>
+                        <ID>7</ID>
+                        <Latin>yo</Latin>
+                        <Local>ё</Local>
+                    </Char>
+                    <Char>
+                        <ID>8</ID>
+                        <Latin>zh</Latin>
+                        <Local>ж</Local>
+                    </Char>
+                    <Char>
+                        <ID>9</ID>
+                        <Latin>z</Latin>
+                        <Local>з</Local>
+                    </Char>
+                    <Char>
+                        <ID>10</ID>
+                        <Latin>i</Latin>
+                        <Local>и</Local>
+                    </Char>
+                    <Char>
+                        <ID>11</ID>
+                        <Latin>j</Latin>
+                        <Local>й</Local>
+                    </Char>
+                    <Char>
+                        <ID>12</ID>
+                        <Latin>k</Latin>
+                        <Local>к</Local>
+                    </Char>
+                    <Char>
+                        <ID>13</ID>
+                        <Latin>l</Latin>
+                        <Local>л</Local>
+                    </Char>
+                    <Char>
+                        <ID>14</ID>
+                        <Latin>m</Latin>
+                        <Local>м</Local>
+                    </Char>
+                    <Char>
+                        <ID>15</ID>
+                        <Latin>n</Latin>
+                        <Local>н</Local>
+                    </Char>
+                    <Char>
+                        <ID>16</ID>
+                        <Latin>о</Latin>
+                        <Local>о</Local>
+                    </Char>
+                    <Char>
+                        <ID>17</ID>
+                        <Latin>p</Latin>
+                        <Local>п</Local>
+                    </Char>
+                    <Char>
+                        <ID>18</ID>
+                        <Latin>r</Latin>
+                        <Local>р</Local>
+                    </Char>
+                    <Char>
+                        <ID>19</ID>
+                        <Latin>s</Latin>
+                        <Local>с</Local>
+                    </Char>
+                    <Char>
+                        <ID>20</ID>
+                        <Latin>t</Latin>
+                        <Local>т</Local>
+                    </Char>
+                    <Char>
+                        <ID>21</ID>
+                        <Latin>u</Latin>
+                        <Local>у</Local>
+                    </Char>
+                    <Char>
+                        <ID>22</ID>
+                        <Latin>f</Latin>
+                        <Local>ф</Local>
+                    </Char>
+                    <Char>
+                        <ID>23</ID>
+                        <Latin>x</Latin>
+                        <Local>х</Local>
+                    </Char>
+                    <Char>
+                        <ID>24</ID>
+                        <Latin>cz</Latin>
+                        <Local>ц</Local>
+                    </Char>
+                    <Char>
+                        <ID>25</ID>
+                        <Latin>ch</Latin>
+                        <Local>ч</Local>
+                    </Char>
+                    <Char>
+                        <ID>26</ID>
+                        <Latin>sh</Latin>
+                        <Local>ш</Local>
+                    </Char>
+                    <Char>
+                        <ID>27</ID>
+                        <Latin>shh</Latin>
+                        <Local>щ</Local>
+                    </Char>
+                    <Char>
+                        <ID>28</ID>
+                        <Latin/>
+                        <Local>ъ</Local>
+                    </Char>
+                    <Char>
+                        <ID>29</ID>
+                        <Latin>y</Latin>
+                        <Local>ы</Local>
+                    </Char>
+                    <Char>
+                        <ID>30</ID>
+                        <Latin/>
+                        <Local>ь</Local>
+                    </Char>
+                    <Char>
+                        <ID>31</ID>
+                        <Latin>e</Latin>
+                        <Local>э</Local>
+                    </Char>
+                    <Char>
+                        <ID>32</ID>
+                        <Latin>yu</Latin>
+                        <Local>ю</Local>
+                    </Char>
+                    <Char>
+                        <ID>33</ID>
+                        <Latin>ya</Latin>
+                        <Local>я</Local>
+                    </Char>
+                    <Char>
+                        <ID>34</ID>
+                        <Latin/>
+                        <Local>@</Local>
+                    </Char>
+                </Chars>
+            </Language>
+        </Languages>
+    </TransliterationTable>
+    <ReinterpNCData>
+        <GFuncs>
+            <Interpolation>
+                <Positioning/>
+                <LinearInterp/>
+                <CircularInterpCW/>
+                <CircularInterpCCW/>
+                <Thread/>
+                <SingleDirectionPositioning/>
+            </Interpolation>
+            <Plane>
+                <XYPlane/>
+                <ZXPlane/>
+                <YZPlane/>
+                <YXPlane/>
+                <XZPlane/>
+                <ZYPlane/>
+            </Plane>
+            <Conversion>
+                <Inch/>
+                <Metric/>
+            </Conversion>
+            <StoredStrokeCheck>
+                <On/>
+                <Off/>
+            </StoredStrokeCheck>
+            <RefPos>
+                <ReturnCheck/>
+                <ReturnTo/>
+                <ReturnFrom/>
+                <OtherRefPosReturn/>
+                <Skip/>
+            </RefPos>
+            <CutterCompens>
+                <Cancel/>
+                <Left/>
+                <Right/>
+            </CutterCompens>
+            <ToolLenCompens>
+                <Plus/>
+                <Minus/>
+                <Cancel/>
+            </ToolLenCompens>
+            <ToolOffset>
+                <Increase/>
+                <Decrease/>
+                <DoubleIncrease/>
+                <DoubleDecrease/>
+            </ToolOffset>
+            <Scaling>
+                <Off/>
+                <On/>
+            </Scaling>
+            <CSSelection>
+                <Workpiece1/>
+                <Workpiece2/>
+                <Workpiece3/>
+                <Workpiece4/>
+                <Workpiece5/>
+                <Workpiece6/>
+            </CSSelection>
+            <Modes>
+                <ExactStop/>
+                <AutoCornerOverride/>
+                <Tapping/>
+                <Cutting/>
+            </Modes>
+            <Macro>
+                <Call/>
+                <ModalCall/>
+                <ModalCallCancel/>
+            </Macro>
+            <Cycles>
+                <CycleParams>
+                    <ReturnPoint/>
+                    <HoleLevel/>
+                    <Feedrate/>
+                    <CutInStep/>
+                    <PauseAtTop/>
+                    <WorkpieceLevel/>
+                    <SafePlaneLevel/>
+                    <PauseAtBottom/>
+                    <SafePlaneReturnFeed/>
+                    <Degression/>
+                    <ChipRemoveRate/>
+                    <MinCutInStep/>
+                    <ToolWithdrawal/>
+                    <SpindleShift/>
+                    <SpindleAngle/>
+                    <LeadIn/>
+                    <LastLeadIn/>
+                    <ChipBreakingStep/>
+                    <NumberOfRepeats/>
+                </CycleParams>
+                <PeckDrilling/>
+                <CounterTapping/>
+                <FineBoring/>
+                <CycleCancel/>
+                <DrillingSpotBoring/>
+                <DrillingCounterBoring/>
+                <PeckDrilling2/>
+                <Tapping/>
+                <Boring1/>
+                <Boring2/>
+                <Boring3/>
+                <Boring4/>
+                <Boring5/>
+                <CycleDefinition/>
+                <CycleCall/>
+            </Cycles>
+            <FrameOfReference>
+                <Absolute/>
+                <Incremental/>
+            </FrameOfReference>
+            <Feed>
+                <PerMinute/>
+                <PerRevolution/>
+            </Feed>
+            <Speed>
+                <CSS/>
+                <CSSCancel/>
+            </Speed>
+            <CannedCycle>
+                <ReturnToInitialPoint/>
+                <ReturnToRPoint/>
+            </CannedCycle>
+            <Other>
+                <Dwell/>
+                <HighSpeed/>
+                <CylInterp/>
+                <ExactStop/>
+                <DataSetting/>
+                <ProgrammingOfAbsZero/>
+            </Other>
+        </GFuncs>
+        <MFuncs>
+            <Spindle>
+                <CW/>
+                <CCW/>
+                <Stop/>
+            </Spindle>
+            <Coolant>
+                <On/>
+                <Off/>
+            </Coolant>
+            <Other>
+                <ProgramStop/>
+                <OptionalStop/>
+                <EndOfProgram/>
+                <ToolChange/>
+                <EndWithReturn/>
+                <SubCall/>
+                <EndSub/>
+            </Other>
+        </MFuncs>
+        <Identifiers>
+            <Coordinates>
+                <AbsoluteX/>
+                <AbsoluteY/>
+                <AbsoluteZ/>
+                <IncrementalX/>
+                <IncrementalY/>
+                <IncrementalZ/>
+            </Coordinates>
+            <Circle>
+                <CenterCoordinates>
+                    <AbsoluteX/>
+                    <AbsoluteY/>
+                    <AbsoluteZ/>
+                    <IncrementalX/>
+                    <IncrementalY/>
+                    <IncrementalZ/>
+                </CenterCoordinates>
+                <Radius/>
+                <ArcAngle/>
+                <Center/>
+                <EndPoint/>
+                <ToolMotionByRadius/>
+                <ChamferOfCorner/>
+                <RoundingOfCorner/>
+            </Circle>
+            <Correctors>
+                <LengthNumber/>
+                <RadiusNumber/>
+            </Correctors>
+            <Other>
+                <BlockNumeration/>
+                <Dwell/>
+                <FeedAssignment/>
+                <SpindleRotations/>
+                <ToolNumber/>
+                <RepeatNumber/>
+                <SubID/>
+                <SafeZLevel/>
+            </Other>
+        </Identifiers>
+        <Additional>
+            <OpenComment/>
+            <CloseComment/>
+            <Delimiters/>
+        </Additional>
+    </ReinterpNCData>
+</STPostprocessor>
